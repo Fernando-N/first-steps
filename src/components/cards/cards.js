@@ -1,7 +1,6 @@
 import './cards.css'
 
 import { Card } from '../card/card'
-import { Button } from '../button/button'
 
 const cardTitles = ['Titulo card 1', 'Titulo card 2', 'Titulo card 3']
 const cardText = [
