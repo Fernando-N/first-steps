@@ -1,11 +1,13 @@
 import './button.css'
 
-const Button = ({ Label, toUppercase }) => (
-  <button className="btn">{Label}</button>
+const Button = ({ label, clickAlert }) => (
+  <button className="btn" onClick={() => clickAlert(label)}>
+    {label}
+  </button>
 )
 
 Button.defaultProps = {
-  Label: 'Clique aqui'
+  label: 'Clique aqui'
 }
 
 export { Button }

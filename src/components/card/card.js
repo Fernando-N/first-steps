@@ -3,12 +3,16 @@ import './card.css'
 
 import { Button } from '../button/button'
 
+const clickAlert = label => {
+  alert(`A label desse botão é ${label}`)
+}
+
 const Card = ({ color, title, text }) => {
   return (
     <div className="card" style={{ backgroundColor: color }}>
       <h3>{title}</h3>
       <p>{text}</p>
-      <Button />
+      <Button clickAlert={clickAlert} label={'Baixar CV'} />
     </div>
   )
 }
